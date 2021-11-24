@@ -1,7 +1,7 @@
 import axios, {AxiosResponse} from "axios";
 import {from, map} from "rxjs";
 
-const msg:string='Thats  a new message from here';
+const msg:string='Thats a new message from here';
 const url:string[]=["https://toggra.com","https://google.com","http://www.webauskunft.info/"]
 
 let prom:Promise<AxiosResponse>;
