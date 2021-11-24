@@ -5,4 +5,4 @@ https://nodejs.org/en/download/
 
 2. npm i typescript || npm i typescript -g
 
-3. Run tsc --init to create tsconfig.json
+3. Run tsc --init to create tsconfig.json && customize this file for your purpose
