@@ -5,4 +5,6 @@ https://nodejs.org/en/download/
 
 2. npm i typescript || npm i typescript -g
 
-3. Run tsc --init to create tsconfig.json && customize this file for your purpose
+2.3 muss wiedere weg
+
+4. Run tsc --init to create tsconfig.json && customize this file for your purpose
