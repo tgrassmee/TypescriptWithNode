@@ -1,9 +1,20 @@
-import axios from "axios";
+import axios, {AxiosResponse} from "axios";
+import {from, map} from "rxjs";
 
 const msg:string='Thats  a new message from here';
-const url="https://toggra.com"
+const url:string[]=["https://toggra.com","https://google.com","http://www.webauskunft.info/"]
+
+let prom:Promise<AxiosResponse>;
 console.log(msg)
 
-axios.get(url)
-.then(response=>console.log(response))
-.catch(error=>console.error(error));
+url.forEach(item=>{
+
+prom=axios.get(item);
+from(prom).pipe(map(f=>f.data)).subscribe(f=>console.log(f));
+
+})
+
+
+
+
+
